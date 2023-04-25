@@ -1,5 +1,6 @@
 package ValenciaHubBackEnd_Hub;
 import java.io.Serializable;
+
 public class contenedor implements Serializable{
     private final int id;
     private int peso, prioridad;
@@ -88,4 +89,8 @@ public class contenedor implements Serializable{
         s="ID: " + this.id + "\n" + "Peso: " + this.peso + "\n" + "País de procedencia: " + this.pais + "\n" + "Inspeccionado en aduanas: " + this.aduanas + "\n" + "Prioridad: " + this.prioridad + "\n" + "Descripción del contenido: " + this.contenido + "\n" + "Empresa emisora: " + this.emisor + "\n" + "Empresa receptora: " + this.receptor + "\n";
         return s;
     }
+
+
+
+
 }

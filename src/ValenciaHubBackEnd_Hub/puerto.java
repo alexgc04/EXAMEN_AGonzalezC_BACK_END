@@ -53,4 +53,10 @@ public class puerto implements Serializable{
     public int contadorPaises(int hub, String país){
         return P[hub].contadorPaises(país);
     }
+
+
+    public String chequeadoAduana(double peso, int numHub){
+        return P[numHub].chequeadoAduana(peso);
+    }
+
 }

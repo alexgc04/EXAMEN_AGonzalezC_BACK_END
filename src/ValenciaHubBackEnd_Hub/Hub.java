@@ -98,5 +98,21 @@ public class Hub implements Serializable{
         }
         return contador; //DEVUELVE EL CONTADOR
     }
+
+    
+    public String chequeadoAduana(double peso){
+        String s = new String();
+
+        for (int i = 0; i < 10; i++) {
+            for (int j = 0; j < 12; j++) {
+                if(hubC[i][j] != null && hubC[i][j].getPeso() >= peso){
+                    return s = "ID: " + hubC[i][j].getId() + "\n" + "Empresa remitente: " + hubC[i][j].getEmisor() + "\n" + "Peso: " + hubC[i][j].getPeso() + "\n" + "Inspeccionado aduanas: " + hubC[i][j].isAduanas() + "\n";
+                }
+            }
+        }
+        return null;
+    }
+    
+    
 }
 
